@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Machine</title>
+    <link rel="stylesheet" href="Home.html">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="script.js">
+    
+
+</head>
+<body>
+    <header>
+        <ul class="navbar">
+            <li><a><button class="btn">Home</button>
+               <a><button class="btn">My Project</button></a>
+               <a><button class="btn">intimate Health</button></a>
+               <a><button class="btn">Beauty</button></a>
+               <a><button class="btn">About us</button></a>
+               <a><button class="btn">Contact</button></a>
+           </li>
+           </ul>
+        <div class="banner">
+            <img src="banner.png"hight="100px"/>
+        </div>
+        <div class="flex-container">
+            <div class="box">Box 
+       <h1>ATM Machine</h1> 
+    <div class="container">
+        <h1>Online ATM</h1>
+        <div id="display">
+            <label for="pin">Enter PIN:</label>
+            <input type="password" id="pin" maxlength="4">
+            <button onclick="checkPin()">Submit</button>
+        </div>
+        <div id="transaction" style="display: none;">
+            <h2>Welcome!</h2>
+            <label for="amount">Enter Amount:</label>
+            <input type="number" id="amount" min="1" step="1">
+            <button onclick="withdraw()">Withdraw</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
